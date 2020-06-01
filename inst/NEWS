@@ -13,7 +13,7 @@ Changes in EVER version 1.2
          As it can still be read at the following URL https://cran.r-project.org/package=EVER
          the package was archived for "policy violations".
          The CRAN policy that EVER violated is the following:
-         <<Packages should not modify the global environment (user's workspace)>>.
+         "Packages should not modify the global environment (user's workspace)".
 		 At the time EVER was archived such a violation did not even pop up as a
          'WARNING' messages when running R CMD check -–as-cran (which instead only
          threw out a 'NOTE').
