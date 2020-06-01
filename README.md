@@ -1,6 +1,6 @@
 # EVER <img src="EVER_LOGO_small.png" align="right" alt="" />
 
-**EVER** (Estimation of Variance by Efficient Replication) is an R package for calibration, estimation and sampling error assessment in complex sample surveys. 
+**EVER (Estimation of Variance by Efficient Replication)** is an R package for calibration, estimation and sampling error assessment in complex sample surveys. 
 
 EVER's sampling variance estimation is based on the extended **DAGJK (Delete-A-group Jackknife)** technique proposed by P. S. Kott.
 
