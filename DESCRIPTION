@@ -1,0 +1,17 @@
+Package: EVER
+Type: Package
+Title: Estimation of Variance by Efficient Replication
+Description: Delete-A-Group Jackknife replication. Calibration of replicate weights.
+        Estimates, standard errors and confidence intervals for: totals, means,
+        absolute and relative frequency distributions, contingency tables, ratios,
+        quantiles and regression coefficients. Estimates, standard errors and
+        confidence intervals for user-defined estimators (even non-analytic).
+        Domain (subpopulation) estimation.
+Version: 1.3
+Author: Diego Zardetto [aut, cre]
+Maintainer: Diego Zardetto <zardetto@istat.it>
+Authors@R: person("Diego", "Zardetto", role = c("aut", "cre"), email = "zardetto@istat.it")
+License: EUPL
+Imports: stats, MASS
+Depends: R (>= 2.14.0)
+ByteCompile: TRUE

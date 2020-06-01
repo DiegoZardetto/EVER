@@ -1,0 +1,65 @@
+Changes in EVER version 1.3
+
+ - This version involves little user visible changes. It's purpose is mainly to
+   ensure a safe transition of EVER to the "R 4.x" series.
+ - Under R 4.0.0 or later, old versions of the EVER package need to be re-installed
+   from sources (i.e. local .tar.gz files). Binary distributions of old versions
+   (i.e. local .zip files) are expected not to work under R 4.0.0 or later.
+
+
+Changes in EVER version 1.2
+
+ - NOTE: ON 2014-11-30 EVER 1.2 WAS ARCHIVED BY CRAN.
+         As it can still be read at the following URL https://cran.r-project.org/package=EVER
+         the package was archived for "policy violations".
+         The CRAN policy that EVER violated is the following:
+         <<Packages should not modify the global environment (user's workspace)>>.
+		 At the time EVER was archived such a violation did not even pop up as a
+         'WARNING' messages when running R CMD check -–as-cran (which instead only
+         threw out a 'NOTE').
+         The implicated assignment to the .GlobalEnv was performed by EVER's
+         function 'kottcalibrate', and it was:
+         (A) Explicitly documented (you can read the help page of function
+             'kottcalibrate', section 'Calibration Process Diagnostics').
+		 (B) Totally harmless (and useful, in my opinion).
+
+ - All .Internal calls have been removed.
+ - .onLoad: bug fixed (thanks to Prof Brian Ripley). system.file is now invoked with lib.loc = libname.
+ - population.check: less tight check on factor columns: now ONLY the values stored into df.population and
+                     into template are requested to be identical (and equally ordered). Formerly a mismatch
+                     in the levels attribute raised an error (which actually does not affect the results).
+ - bounds.hint: works better when either of the bounds of the star interval is not finite
+ - g.range: small change (now works better if zeros in initial and calibrated weights are not tied)
+
+
+Changes in EVER version 1.1.1
+
+ - kottcalibrate: minor bug fixed (added drop = FALSE in mm[ , !zz, drop = FALSE])
+ - kottcalibrate: checks added on bounds (must be numeric and must satisfy bounds[1] <= 1 <= bounds[2])
+ - population.check: default value (FALSE) for 'partition' argument was lacking, despite documented.
+ - g.range: minor bug (was not working for objects that have undergone subsequent calibrations, due to
+            erroneous name reconstruction of last but one weights)
+ - LICENCE: removed non ASCII characters
+
+
+Changes in EVER version 1.1
+
+ - kottby, kottby.user, kott.ratio, kott.quantile, kott.regcoef: NEW argument 'vartype' allows to request every
+                                                                 possible combination of: SE, CV, CV%, Var
+
+ - NEW bounds.hint function: helps the user when performing range restricted calibration. Suggests a sound
+                             'bounds' value for which kottcalibrate is likely to converge.
+
+ - g.range BUG fix: g-weights lower value was erroneously 0 whenever there was a zero calibration weight
+                    corresponding to a non zero direct weight (thus erroneously missing possible negative
+                    g-weights).
+
+ - Typo in a kottcalibrate message ('prameter')
+
+ - Help page for population.check missed a \code{} around a 'kottcalibrate' and had 2 'deskott' instead of
+   'data'
+
+
+Changes in EVER version 1.0
+
+ - INITIAL RELEASE ON CRAN

@@ -1,0 +1,16 @@
+user.estimators                 Directory containing R functions built to show
+                                how to use kottby.user for calculating estimates,
+                                standard errors and confidence intervals for
+                                user-defined estimators.
+                                (See also help pages: ?kottby.user, ?user.estimator)
+
+CITATION                        How to cite EVER package in pubblications.
+                                (In R type the command citation("EVER"))
+
+COPYING                         Copyright information
+
+DISCLAIMER                      Important information for EVER package users.
+
+NEWS                            Change log
+
+README                          This file

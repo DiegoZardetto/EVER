@@ -1,0 +1,12 @@
+citHeader("To cite the EVER package in publications please use:")
+
+citEntry(
+    entry = "misc",
+    author = "Diego Zardetto",
+    year = "2020",
+    title = "EVER: Estimation of Variance by Efficient Replication",
+    note = "R package version 1.3",
+    organization = "Istat",
+    address = "Rome, Italy",
+    textVersion = "Zardetto D. (2020) \"EVER: Estimation of Variance by Efficient Replication\". R package version 1.3, Istat, Italy."
+    )

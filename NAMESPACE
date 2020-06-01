@@ -1,0 +1,9 @@
+import(stats, MASS)
+
+importFrom("stats", "as.formula", "model.frame", "model.matrix",
+           "na.omit", "qt", "terms")
+
+importFrom("utils", "memory.limit")
+
+export(bounds.hint,desc,g.range,global,kott.addvars,kottby,kottby.user,kottcalibrate,
+kottdesign,kott.quantile,kott.ratio,kott.regcoef,pop.template,population.check)
