@@ -13,7 +13,7 @@ install.packages("devtools")
 devtools::install_github("DiegoZardetto/EVER")
 ```
 
-The **last released version** of EVER can be downloaded from [Istat website](https://www.istat.it/en/tools/methods-and-it-tools/processing-tools/ever).
+The **last released version** of EVER can be downloaded from [Istat website](https://www.istat.it/en/methods-and-tools/methods-and-it-tools/process/processing-tools/ever).
 
 
 ## Main Statistical Functions
