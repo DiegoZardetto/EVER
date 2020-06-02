@@ -13,5 +13,5 @@ Maintainer: Diego Zardetto <zardetto@istat.it>
 Authors@R: person("Diego", "Zardetto", role = c("aut", "cre"), email = "zardetto@istat.it")
 License: EUPL
 Imports: stats, MASS
-Depends: R (>= 2.14.0)
+Depends: R (>= 3.5.0)
 ByteCompile: TRUE
