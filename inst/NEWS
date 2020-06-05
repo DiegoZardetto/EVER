@@ -5,6 +5,11 @@ Changes in EVER version 1.3
  - Under R 4.0.0 or later, old versions of the EVER package need to be re-installed
    from sources (i.e. local .tar.gz files). Binary distributions of old versions
    (i.e. local .zip files) are expected not to work under R 4.0.0 or later.
+ - EVER is now also available from GITHUB at the following URL:
+   https://github.com/DiegoZardetto/EVER
+ - EVER has now a brand new website (built with pkgdown) hosted on GITHUB pages
+   at the following URL:
+   https://diegozardetto.github.io/EVER
  - kottcalibrate, bounds.hint: now equality of model.formulae is checked with
    all.equal() instead of identical(), so that environment mismatches are neglected.
    This is desirable when the model.formulae being compared have been generated
@@ -18,14 +23,14 @@ Changes in EVER version 1.2
          the package was archived for "policy violations".
          The CRAN policy that EVER violated is the following:
          "Packages should not modify the global environment (user's workspace)".
-		 At the time EVER was archived such a violation did not even pop up as a
+         At the time EVER was archived such a violation did not even pop up as a
          'WARNING' messages when running R CMD check -–as-cran (which instead only
          threw out a 'NOTE').
          The implicated assignment to the .GlobalEnv was performed by EVER's
          function 'kottcalibrate', and it was:
          (A) Explicitly documented (you can read the help page of function
              'kottcalibrate', section 'Calibration Process Diagnostics').
-		 (B) Totally harmless (and useful, in my opinion).
+         (B) Totally harmless (and useful, in my opinion).
 
  - All .Internal calls have been removed.
  - .onLoad: bug fixed (thanks to Prof Brian Ripley). system.file is now invoked with lib.loc = libname.
