@@ -7,7 +7,7 @@ Description: Delete-A-Group Jackknife replication. Calibration of replicate weig
         quantiles and regression coefficients. Estimates, standard errors and
         confidence intervals for user-defined estimators (even non-analytic).
         Domain (subpopulation) estimation.
-Version: 1.3
+Version: 1.4
 Author: Diego Zardetto [aut, cre]
 Maintainer: Diego Zardetto <zardetto@istat.it>
 Authors@R: person("Diego", "Zardetto", role = c("aut", "cre"), email = "zardetto@istat.it")

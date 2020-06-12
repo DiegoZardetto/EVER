@@ -38,10 +38,11 @@ function (deskott, df.population,
             stop("Parameter 'partition' must be supplied as a formula")
     }
     if (inherits(df.population, "pop.totals")) {
-        if (!all.equal(calmodel, attr(df.population, "calmodel"))) 
+        # DEBUG 13/06/2020: if clouses need isTRUE(all.equal())
+        if (!isTRUE(all.equal(calmodel, attr(df.population, "calmodel")))) 
             warning("'calmodel' formula (1) does not agree with the 'calmodel' attribute of ", 
                 substitute(df.population), " (2). Value (2) will be used", immediate. = TRUE)
-        if (!all.equal(partition, attr(df.population, "partition"))) 
+        if (!isTRUE(all.equal(partition, attr(df.population, "partition")))) 
             warning("'partition' formula (1) does not agree with the 'partition' attribute of ", 
                 substitute(df.population), " (2). Value (2) will be used", immediate. = TRUE)
         if (!identical(attr(deskott, "data"), attr(df.population, 

@@ -37,20 +37,21 @@ function (deskott, df.population,
             stop("Parameter 'partition' must be supplied as a formula")
     }
     if (inherits(df.population, "pop.totals")) {
-        if (!all.equal(calmodel, attr(df.population, "calmodel"))) 
+        # DEBUG 13/06/2020: if clouses need isTRUE(all.equal())
+        if (!isTRUE(all.equal(calmodel, attr(df.population, "calmodel")))) 
             warning("'calmodel' formula (1) does not agree with the 'calmodel' attribute of ", 
                 substitute(df.population), " (2). Value (2) will be used",
-				immediate. = TRUE)
-        if (!all.equal(partition, attr(df.population, "partition"))) 
+                immediate. = TRUE)
+        if (!isTRUE(all.equal(partition, attr(df.population, "partition")))) 
             warning("'partition' formula (1) does not agree with the 'partition' attribute of ", 
                 substitute(df.population), " (2). Value (2) will be used",
-				immediate. = TRUE)
+                immediate. = TRUE)
         if (!identical(attr(deskott, "data"), attr(df.population, 
             "data"))) 
             warning("Data frames used to build objects ", 
                 substitute(deskott),
-				" and ", substitute(df.population), " have different names",
-				immediate. = TRUE)
+                " and ", substitute(df.population), " have different names",
+                immediate. = TRUE)
     }
     else {
         df.population <- population.check(df.population, deskott, 

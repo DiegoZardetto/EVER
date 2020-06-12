@@ -1,5 +1,13 @@
 Changes in EVER version 1.3
 
+ - THIS IS A DEVELOPMENT VERSION AND IS NOT RELEASED YET.
+ - kottcalibrate, bounds.hint: equality of model.formulae was checked with all.equal()
+   (which was a good idea) but if clauses didn't use the right construct (i.e.
+   isTRUE(all.equal())). Fixed.
+
+
+Changes in EVER version 1.3
+
  - This version involves little user visible changes. It's purpose is mainly to
    ensure a safe transition of EVER to the "R 4.x" series.
  - Under R 4.0.0 or later, old versions of the EVER package need to be re-installed
