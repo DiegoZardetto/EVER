@@ -78,7 +78,7 @@ Vanderhoeft, C. (2001) \emph{"Generalized Calibration at Statistic Belgium"}, St
 
 Lumley, T. (2006) \emph{"survey: analysis of complex survey samples"}, \url{http://cran.at.r-project.org/web/packages/survey/index.html}.
 
-Scannapieco, M., Zardetto, D., Barcaroli, G. (2007) \emph{"La Calibrazione dei Dati con R: una Sperimentazione sull'Indagine Forze di Lavoro ed un Confronto con GENESEES/SAS"}, Contributi Istat n. 4., \url{http://www.istat.it/dati/pubbsci/contributi/Contributi/contr_2007/2007_4.pdf}.
+Scannapieco, M., Zardetto, D., Barcaroli, G. (2007) \emph{"La Calibrazione dei Dati con R: una Sperimentazione sull'Indagine Forze di Lavoro ed un Confronto con GENESEES/SAS"}, Contributi Istat n. 4., \url{https://www.istat.it/it/files//2018/07/2007_4.pdf}.
 }
 \seealso{
 \code{\link{desc}} for a concise description of \code{kott.design} objects, \code{\link{kottby}}, \code{\link{kott.ratio}}, \code{\link{kott.regcoef}}, \code{\link{kott.quantile}} and \code{\link{kottby.user}} for calculating estimates and standard errors, \code{\link{pop.template}} for constructing known totals data frames in compliance with the standard required by \code{kottcalibrate}, \code{\link{population.check}} to check that the known totals data frame satisfies that standard, \code{\link{bounds.hint}} to obtain an hint for range restricted calibration. 
